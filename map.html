@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1fc6b2e28f03f592af8fceb051260111 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1fc6b2e28f03f592af8fceb051260111" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1fc6b2e28f03f592af8fceb051260111 = L.map(
+                "map_1fc6b2e28f03f592af8fceb051260111",
+                {
+                    center: [32.42087889333333, -6.931890356933335],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b0b69c01263e747ae2fdeb33ace25eec = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            var marker_1df2c95daa2fcb945e96aff644b4a8c3 = L.marker(
+                [31.60689926, -8.036299706],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_1df2c95daa2fcb945e96aff644b4a8c3.bindTooltip(
+                `<div>
+                     Menara Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f71c13121870f092dfc9e4bcced1386e = L.marker(
+                [33.36750031, -7.589970112],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_f71c13121870f092dfc9e4bcced1386e.bindTooltip(
+                `<div>
+                     Mohammed V International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e22ed7d63b7aa784c9161b5146cda93 = L.marker(
+                [30.322478, -9.412003],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_3e22ed7d63b7aa784c9161b5146cda93.bindTooltip(
+                `<div>
+                     Al Massira Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f20e9de346623d8d80c9e543dea93c4 = L.marker(
+                [35.731741, -5.921459],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_9f20e9de346623d8d80c9e543dea93c4.bindTooltip(
+                `<div>
+                     Tangier Ibn Battuta Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d267f54f1f99dd045c4ce857b36f4ad = L.marker(
+                [34.051498, -6.75152],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_5d267f54f1f99dd045c4ce857b36f4ad.bindTooltip(
+                `<div>
+                     Rabat-Salé Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccc46aac3e59b609e613a5c564fd65f1 = L.marker(
+                [33.927299, -4.97796],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_ccc46aac3e59b609e613a5c564fd65f1.bindTooltip(
+                `<div>
+                     Fes Saïss International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebb3b60a8f47d2b674b31b040135129c = L.marker(
+                [34.789558, -1.926041],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_ebb3b60a8f47d2b674b31b040135129c.bindTooltip(
+                `<div>
+                     Oujda Angads Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa37f92081c978bfb48a8a1148bbbdfe = L.marker(
+                [30.93910027, -6.909430027],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_fa37f92081c978bfb48a8a1148bbbdfe.bindTooltip(
+                `<div>
+                     Ouarzazate Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24211449c66e7ed01aaa809a880769df = L.marker(
+                [31.397499, -9.68167],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_24211449c66e7ed01aaa809a880769df.bindTooltip(
+                `<div>
+                     Essaouira-Mogador Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16d545d8521df5722aa29b868c0fbe04 = L.marker(
+                [34.9888, -3.02821],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_16d545d8521df5722aa29b868c0fbe04.bindTooltip(
+                `<div>
+                     Nador Al Aaroui International Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3832e5f84015ed19a5aad19703bfebf3 = L.marker(
+                [35.17710114, -3.839519978],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_3832e5f84015ed19a5aad19703bfebf3.bindTooltip(
+                `<div>
+                     Cherif Al Idrissi Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40ecf889a8eb570e9e457aced4eb2b04 = L.marker(
+                [31.94750023, -4.398330212],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_40ecf889a8eb570e9e457aced4eb2b04.bindTooltip(
+                `<div>
+                     Moulay Ali Cherif Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a74fc554fd16899cbd79637b87c95c4 = L.marker(
+                [33.5975, -7.465],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_4a74fc554fd16899cbd79637b87c95c4.bindTooltip(
+                `<div>
+                     Casablanca Tit Mellil Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e219ed053a56542072d14d48995fa9ce = L.marker(
+                [30.381399, -9.54631],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_e219ed053a56542072d14d48995fa9ce.bindTooltip(
+                `<div>
+                     Inezgane Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7fb43a2a3ee626f05ab6da5e0a1bab98 = L.marker(
+                [28.44820023, -11.16129971],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_7fb43a2a3ee626f05ab6da5e0a1bab98.bindTooltip(
+                `<div>
+                     Tan Tan Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e92d2e69813b93017c740b7cffae67dd = L.marker(
+                [34.298901, -6.59588],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_e92d2e69813b93017c740b7cffae67dd.bindTooltip(
+                `<div>
+                     Kenitra Air Base
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3236356a3947e772a74e1cb52889367b = L.marker(
+                [35.594299, -5.32002],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_3236356a3947e772a74e1cb52889367b.bindTooltip(
+                `<div>
+                     Sania Ramel Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c027ccde40bc29245db93e3c6e93af8 = L.marker(
+                [32.401895, -6.315905],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_9c027ccde40bc29245db93e3c6e93af8.bindTooltip(
+                `<div>
+                     Beni Mellal Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97576105a7fedd905648d5216e9a4e22 = L.marker(
+                [32.51430556, -1.983055556],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_97576105a7fedd905648d5216e9a4e22.bindTooltip(
+                `<div>
+                     Bouarfa Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e599c5eddb3cfad1f2d572690d99c7e3 = L.marker(
+                [33.8791008, -5.515120029],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_e599c5eddb3cfad1f2d572690d99c7e3.bindTooltip(
+                `<div>
+                     Bassatine Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b17f6489660f8640ac17e6138e9728f1 = L.marker(
+                [33.655399, -7.22145],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_b17f6489660f8640ac17e6138e9728f1.bindTooltip(
+                `<div>
+                     Ben Slimane Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_885fcd64b5b29d795cc8968c774e5648 = L.marker(
+                [29.026699, -10.0503],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_885fcd64b5b29d795cc8968c774e5648.bindTooltip(
+                `<div>
+                     Guelmim Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b04ebfc767df69daf4a4e42b76addfdd = L.marker(
+                [33.505299, -5.1529],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_b04ebfc767df69daf4a4e42b76addfdd.bindTooltip(
+                `<div>
+                     Ifran Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ec41313abc9a3d6b510755722ca1419 = L.marker(
+                [34.23059845, -6.050139904],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_6ec41313abc9a3d6b510755722ca1419.bindTooltip(
+                `<div>
+                     Sidi Slimane Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_883af3734bb6021a19cc5715f277e2f1 = L.marker(
+                [27.726982, -9.237865],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_883af3734bb6021a19cc5715f277e2f1.bindTooltip(
+                `<div>
+                     Mahbes Airbase
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0cf1ef8e995abcc88edc3314ad29997b = L.marker(
+                [34.793361, -5.635986],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_0cf1ef8e995abcc88edc3314ad29997b.bindTooltip(
+                `<div>
+                     Ouezzane Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7e45a5c5e5b419cd0581af742b5ef5b = L.marker(
+                [34.008099, -4.96556],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_c7e45a5c5e5b419cd0581af742b5ef5b.bindTooltip(
+                `<div>
+                     Fes Sefrou Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dafb99391100b02a7675254586702ac4 = L.marker(
+                [35.152986, -2.918673],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_dafb99391100b02a7675254586702ac4.bindTooltip(
+                `<div>
+                     Taouima Nador Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab6cc4fdf9eadb916da1bb54bc7d5f35 = L.marker(
+                [30.503487, -8.821549],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_ab6cc4fdf9eadb916da1bb54bc7d5f35.bindTooltip(
+                `<div>
+                     Taroudant Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ae284dff9b37a9c08960e19a96d9c8e = L.marker(
+                [34.231887, -3.94701],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_5ae284dff9b37a9c08960e19a96d9c8e.bindTooltip(
+                `<div>
+                     Taza Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21f3dfd17aa4275f2a46cdfb1386354f = L.marker(
+                [30.320299, -5.86667],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_21f3dfd17aa4275f2a46cdfb1386354f.bindTooltip(
+                `<div>
+                     Zagora Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c677f39f9bcd930ff61bb27632c181d2 = L.marker(
+                [30.263858, -5.853341],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_c677f39f9bcd930ff61bb27632c181d2.bindTooltip(
+                `<div>
+                     Zagora Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3dc1aad89e94964f603ac27e55ed8b3 = L.marker(
+                [30.49707, -8.63648],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_f3dc1aad89e94964f603ac27e55ed8b3.bindTooltip(
+                `<div>
+                     Lakhmiss N'Arazane Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b2aae0d4084b7c2ef6e01d7736e4bbfa = L.marker(
+                [33.55329895, -7.661389828],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_b2aae0d4084b7c2ef6e01d7736e4bbfa.bindTooltip(
+                `<div>
+                     Anfa Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_561739cad07cb3ca7b5f279f99dcdfcc = L.marker(
+                [33.233299, -8.51667],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_561739cad07cb3ca7b5f279f99dcdfcc.bindTooltip(
+                `<div>
+                     El Jadida Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc0443d6188eb59a78baf6bf9cee986b = L.marker(
+                [32.85821, -6.9461],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_dc0443d6188eb59a78baf6bf9cee986b.bindTooltip(
+                `<div>
+                     Khouribga Air Base
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02e49b1881da17f7e740411e3508c465 = L.marker(
+                [32.8767, -7.08445],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_02e49b1881da17f7e740411e3508c465.bindTooltip(
+                `<div>
+                     Khouribga West Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5711df09ad3ce209af0fbf725819191b = L.marker(
+                [32.124889, -7.877884],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_5711df09ad3ce209af0fbf725819191b.bindTooltip(
+                `<div>
+                     Ben Guerir Air Base
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5cce3cc1028ef4f2ccf05a84b17042d5 = L.marker(
+                [32.275414, -9.234266],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_5cce3cc1028ef4f2ccf05a84b17042d5.bindTooltip(
+                `<div>
+                     Safi Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0409b1351b4bb3698c6237106135e6f = L.marker(
+                [29.368889, -10.180278],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_a0409b1351b4bb3698c6237106135e6f.bindTooltip(
+                `<div>
+                     Sidi Ifni Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22edb089030a16f112eb8de3149c3291 = L.marker(
+                [31.63833, -8.34768],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_22edb089030a16f112eb8de3149c3291.bindTooltip(
+                `<div>
+                     Sidi Zouine Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e87026a2695c1fa50ee1640dbbc7dc7a = L.marker(
+                [27.9487, -12.9166],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_e87026a2695c1fa50ee1640dbbc7dc7a.bindTooltip(
+                `<div>
+                     Tarfaya Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b0f47ff8e780f8c8a95bae80b69c277 = L.marker(
+                [29.557381, -8.007671],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_7b0f47ff8e780f8c8a95bae80b69c277.bindTooltip(
+                `<div>
+                     Tata Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8deee61abb1e2d7412be5eb243b6b09 = L.marker(
+                [33.55178, -7.66799],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_f8deee61abb1e2d7412be5eb243b6b09.bindTooltip(
+                `<div>
+                     Cheikh Khalifa Bin Zayed Al Nahyan Hospital Heliport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50e5f35dd7bec95ba9cdc779ed41d3a8 = L.marker(
+                [32.67406, -6.76116],
+                {}
+            ).addTo(map_1fc6b2e28f03f592af8fceb051260111);
+        
+    
+            marker_50e5f35dd7bec95ba9cdc779ed41d3a8.bindTooltip(
+                `<div>
+                     Beni Amir Heliport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
